@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background: #181818;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1.3rem 1rem;
+  background: #660000;   /* Bordó oscuro, ajusta a #660000 si querés aún más oscuro */
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 14px -4px #400, 0 1.5px 1.5px rgba(0,0,0,0.12);
+  border-bottom: 4px solid #ffd700; /* línea dorada, como acento elegante */
+}
+
+.logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  color: #fff;
+  background: transparent; /* sin fondo extra */
+  display: inline-block;
+  padding: 0.15em 1em 0.07em 1em;
+  border-radius: 0.6em;
+  font-size: 2.5rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.4em;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.slogan {
+  font-size: 1.15rem;
+  color: #ffd6d6;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+
+.bienvenida {
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0.8em;
+}
+
+.menu-section {
+  margin: 2rem auto;
+  max-width: 700px;
+  background: #222;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+
+.menu-section h2 {
+  font-size: 1.6rem;
+  color: #f9c63d;
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.7em 0;
+  border-bottom: 1px solid #444;
+  font-size: 1.08rem;
+}
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-name {
+  font-weight: bold;
+  flex-basis: 35%;
+}
+
+.menu-item-desc {
+  flex-basis: 45%;
+  color: #ccc;
+  font-size: 0.98em;
+  padding-left: 10px;
+}
+
+.menu-item-price {
+  color: #ffd700;
+  font-weight: bold;
+  flex-basis: 20%;
+  text-align: right;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1.5em 0 1em 0;
+}
+
+.nav button {
+  background: #600;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.4em;
+  font-size: 1.1em;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  transition: background 0.2s;
+  font-weight: bold;
+}
+.nav button.active,
+.nav button:hover {
+  background: #900;
+}
+
+.footer {
+  background: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em 0 1em 0;
+  font-size: 1.02em;
+  border-top: 2px solid #600;
+  margin-top: 3em;
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-top: 0.7em;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header { font-size: 1.2rem; padding: 1.1rem 0.6rem 0.7rem 0.6rem;}
+  .logo { font-size: 1.22rem; }
+  .menu-section { padding: 0.7rem; }
+  .menu-section h2 { font-size: 1.3rem; }
+  .nav button { padding: 0.5em 1em; font-size: 1em; }
+}
